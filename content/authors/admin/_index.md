@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Prof. Kerstin Noëlle Vokinger, MD, JD, PhD, LL.M.
+title: Vokinger Research and Institutional Advisory Group
 
 # Username (this should match the folder name)
 authors:
@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Assistant Professor for Public Law and Digitalization Health Law and Regulatory Sciences
+# role: Assistant Professor for Public Law and Digitalization Health Law and Regulatory Sciences
 
 # Organizations/Affiliations
 organizations:
@@ -21,21 +21,22 @@ organizations:
 bio: We bridge together the fields of law, data science and medicine to support governments and institutions in the advancement of regulatory sciences. 
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Law
+- Data Science
+- Medicine
+- Regulatory Sciences
 
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+# education:
+#  courses:
+#  - course: PhD in Artificial Intelligence
+#    institution: Stanford University
+#    year: 2012
+#  - course: MEng in Artificial Intelligence
+#    institution: Massachusetts Institute of Technology
+#    year: 2009
+#  - course: BSc in Artificial Intelligence
+#    institution: Massachusetts Institute of Technology
+#    year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
