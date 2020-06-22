@@ -70,9 +70,7 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Kerstin is Director of the Lab for Technology, Markets, and Regulation. She is an Assistant Professor at the University of Zurich and affiliated faculty at Harvard Medical School. Her area of expertise lies at the intersection of medicine, law, and technology. She has published more than 50 scientific papers and book chapters and advises governments and international organizations. She studied in parallel law (JD) and medicine (MD) at the University of Zurich, conducted her PhD at the University of Zurich, and completed her Masters of Law (LLM) degree at Harvard Law School. She is admitted to the Zurich bar.
 
 
 
