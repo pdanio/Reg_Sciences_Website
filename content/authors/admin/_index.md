@@ -71,5 +71,5 @@ user_groups:
 - Visitors
 ---
 
-Kerstin Vokinger is an Assistant Professor at the University of Zurich and affiliated faculty at Harvard Medical School. Her area of expertise lies at the intersection of medicine, law, and technology. She has published more than 50 scientific papers and book chapters and advises governments and international organizations. She studied in parallel law (JD) and medicine (MD) at the University of Zurich, conducted her PhD at the University of Zurich, and completed her Masters of Law (LLM) degree at Harvard Law School. She is admitted to the Zurich bar.
+# Kerstin Vokinger is an Assistant Professor at the University of Zurich and affiliated faculty at Harvard Medical School. Her area of expertise lies at the intersection of medicine, law, and technology. She has published more than 50 scientific papers and book chapters and advises governments and international organizations. She studied in parallel law (JD) and medicine (MD) at the University of Zurich, conducted her PhD at the University of Zurich, and completed her Masters of Law (LLM) degree at Harvard Law School. She is admitted to the Zurich bar.
 
