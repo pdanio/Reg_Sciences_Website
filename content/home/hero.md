@@ -50,10 +50,3 @@ title = "Vokinger Research and Institutional Advisory Group"
 # [cta_note]
 #  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
-
-<center>
-<br>
-# <p style="font-size:48px"> <strong> Vokinger Research and Institutional Advisory Group </strong> </p>
-<p style="font-size:20px"> University of Zurich </p>
-<br>
-</center>
