@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Team"
-  url = "#people"
+  url = "team/"
   weight = 60
   
  [[main]]
