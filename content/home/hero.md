@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-# title = "Vokinger Research and Institutional Advisory Group"
+title = "Vokinger Research and Institutional Advisory Group"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 # hero_media = "hero-academic.png"
@@ -53,7 +53,7 @@ weight = 10  # Order that this section will appear.
 
 <center>
 <br>
-<p style="font-size:48px"> <strong> Vokinger Research and Institutional Advisory Group </strong> </p>
+# <p style="font-size:48px"> <strong> Vokinger Research and Institutional Advisory Group </strong> </p>
 <p style="font-size:20px"> University of Zurich </p>
 <br>
 </center>
