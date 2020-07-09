@@ -13,10 +13,10 @@
   url = "#landing"
   weight = 10
 
- [[main]]
-  name = "About Us"
-  url = "aboutus/"
-  weight = 15
+# [[main]]
+#  name = "About Us"
+#  url = "aboutus/"
+#  weight = 15
 
 [[main]]
   name = "Institutional Advisory"
