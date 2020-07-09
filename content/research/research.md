@@ -1,76 +1,55 @@
-+++
-# A Projects section created with the Portfolio widget.
-# widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
-# headless = true  # This file represents a page section.
-# active = true  # Activate this widget? true/false
-# weight = 60  # Order that this section will appear.
+---
+title: autoDISCERN
+summary: Assessing the quality of online health information with AI.
+tags:
+- Data Science
+- Featured
+date: "2019-12-02T00:00:00Z"
+authors:
+- laurakinkead
 
-[content]
-  # Page type to display. E.g. project.
-  title = "Research"
-  subtitle = ""
+# Optional external URL for project (replaces project detail page).
+# external_link: ""
 
-  # page_type = "project"
-  
-  # Filter toolbar (optional).
-  # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
-  # To show all items, set `tag` to "*".
-  # To filter by a specific tag, set `tag` to an existing tag name.
-  # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
-  
-  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
-  filter_default = 0
-  
-   [[content.filter_button]]
-     name = "All"
-     tag = "*"
-  
-   [[content.filter_button]]
-     name = "Data Science and Medicine"
-     tag = "Data Science"
-  
-   [[content.filter_button]]
-     name = "Regulatory Sciences"
-     tag = "Law"
+image:
+  caption: Mock Up of the autoDISCERN validator.
+  focal_point: Smart
 
-[design]
-  # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "2"
+links:
+- icon: github
+  icon_pack: fab
+  name: View Code
+  url: https://github.com/uzh-dqbm-cmi/auto-discern
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
-  # Toggle between the various page layout types.
-  #   1 = List
-  #   2 = Compact
-  #   3 = Card
-  #   5 = Showcase
-  view = 3
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+# slides: example
+---
 
-  # For Showcase view, flip alternate rows?
-  flip_alt_rows = false
+Patients increasingly turn to the web for health information. This is great news for patient engagement... but only if they find good information! Unfortunately, low quality articles are common on the internet. This presents risks to the patient in the form of misinformation and a possibly poorer relationship with their physician. To address this, researchers at the University of Oxford developed the [DISCERN instrument](http://www.discern.org.uk/index.php): a set of criteria that any lay-person can use to evaluate the quality of online health information. However, patients are unlikely to take the time to apply these criteria to the health websites they visit. Enter machine learning!
 
-[design.background]
-  # Apply a background color, gradient, or image.
-  #   Uncomment (by removing `#`) an option to apply it.
-  #   Choose a light or dark text color by setting `text_color_light`.
-  #   Any HTML color name or Hex value is valid.
-  
-  # Background color.
-  # color = "navy"
-  
-  # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
-  
-  # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+We built an automated implementation of the DISCERN instrument (Brief version) using machine learning models. We compared the performance of a traditional model (Random Forest) with that of a hierarchical encoder attention-based neural network (HEA) model using two language embeddings, BERT and BioBERT. The figure below summarizes the architecture of the HEA model.
 
-  # Text color (true=light or false=dark).
-  # text_color_light = true  
-  
-[advanced]
- # Custom CSS. 
- css_style = ""
- 
- # CSS class.
- css_class = ""
-+++
+{{< figure src="architecture_overview.png" title="Architecture of the Hierarchical Encoder Attention-based model used to evaluate health articles according to the DISCERN critera." >}}
+
+Overall, we found that our models were able to reproduce the DISCERN criteria reasonably well. The HEA architecture with BioBERT encodings achieved an average F1 score of 0.74 across all criteria. This translates to an accuracy of 81%. In comparison, human raters achieve an accuracy of 94% on this task.
+
+The attention mechanism implemented in the HEA architectures not only provided _model explainability_ by identifying reasonable supporting sentences for the documents fulfilling the Brief DISCERN criteria, but also boosted F1 performance by 0.05 compared to the same architecture without an attention mechanism.
+
+| Discern Criteria                | Attended Sentence    |
+| ----------------------- | ------------------------- |
+| Is it clear what sources of information were used to compile the publication (other than the author or producer)? | _American Journal of Geriatric Psychiatry._ |
+| Is it clear when the information used or reported in the publication was produced? | _Review Date: 3/8/2013._               |
+| Does it describe how each treatment works? | _Gentler martial arts which focus on internal control, breathing and mental discipline can be especially useful for combating depressed thinking and improving relaxation skills._ |
+| Does it describe the benefits of each treatment? | _The mindfulness approach uses meditation, yoga, and breathing exercises to focus awareness on the present moment and break negative thinking_ |
+| Does it describe the risks of each treatment? | _Common side effects of SSRIs include:_ |
+
+
+Our research suggests that it is feasible to automate online health information quality assessment, which is an important step towards empowering patients to become informed partners in the healthcare process.
