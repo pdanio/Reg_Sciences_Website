@@ -9,7 +9,7 @@
   weight = 2  # Position of the link in the navigation bar.
 
 [[main]]
-  name = "Home"
+  name = "Home_2"
   url = "#about"
   weight = 10
 
