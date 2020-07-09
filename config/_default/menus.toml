@@ -16,7 +16,7 @@
 [[main]]
   name = "About Us"
   url = "aboutus/"
-  weight = 20
+  weight = 15
 
 [[main]]
   name = "Institutional Advisory"
