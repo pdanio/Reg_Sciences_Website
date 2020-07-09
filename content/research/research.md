@@ -6,7 +6,6 @@ tags:
 - Featured
 date: "2019-12-02T00:00:00Z"
 authors:
-- laurakinkead
 
 # Optional external URL for project (replaces project detail page).
 # external_link: ""
@@ -36,8 +35,6 @@ url_video: ""
 Patients increasingly turn to the web for health information. This is great news for patient engagement... but only if they find good information! Unfortunately, low quality articles are common on the internet. This presents risks to the patient in the form of misinformation and a possibly poorer relationship with their physician. To address this, researchers at the University of Oxford developed the [DISCERN instrument](http://www.discern.org.uk/index.php): a set of criteria that any lay-person can use to evaluate the quality of online health information. However, patients are unlikely to take the time to apply these criteria to the health websites they visit. Enter machine learning!
 
 We built an automated implementation of the DISCERN instrument (Brief version) using machine learning models. We compared the performance of a traditional model (Random Forest) with that of a hierarchical encoder attention-based neural network (HEA) model using two language embeddings, BERT and BioBERT. The figure below summarizes the architecture of the HEA model.
-
-{{< figure src="architecture_overview.png" title="Architecture of the Hierarchical Encoder Attention-based model used to evaluate health articles according to the DISCERN critera." >}}
 
 Overall, we found that our models were able to reproduce the DISCERN criteria reasonably well. The HEA architecture with BioBERT encodings achieved an average F1 score of 0.74 across all criteria. This translates to an accuracy of 81%. In comparison, human raters achieve an accuracy of 94% on this task.
 
