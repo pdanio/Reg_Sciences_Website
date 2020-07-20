@@ -8,10 +8,10 @@
 #  url = "landing/"  # Widget Page folder name.
 #  weight =   # Position of the link in the navigation bar.
 
-[[main]]
-  name = "Home"
-  url = "#landing"
-  weight = 10
+# [[main]]
+#   name = "Home"
+#   url = "#landing"
+#   weight = 10
 
 # [[main]]
 #  name = "About Us"
